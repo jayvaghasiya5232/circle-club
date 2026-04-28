@@ -23,18 +23,10 @@ export const ECOSYSTEM_CARD: EcosystemCard[] = [
     href: "/contact?type=real-estate",
   },
   {
-    title: "Monaco Real Estate",
-    description:
-      "Strategic real estate advisory within Monaco's most prestigious districts.",
-    buttonText: "Contact Real Estate Expert",
-    thumbnail: "/images/ecosystem/eco_3.webp",
-    href: "/contact?type=real-estate",
-  },
-  {
     title: "Car Support",
     description: "Professional detailing facilities in Monaco & Cannes.",
     buttonText: "Contact Garage Manager",
-    thumbnail: "/images/ecosystem/eco_5.webp",
+    thumbnail: "/images/ecosystem/eco_10.jpeg",
     href: "/contact?type=cars",
   },
   {

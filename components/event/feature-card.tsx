@@ -16,6 +16,8 @@ const FeatureCard = ({
   videoSrc,
   thumbnail,
   href,
+  secondaryButtonText,
+  secondaryHref,
   className,
   reverse,
 }: FeatureSectionProps) => {
@@ -44,20 +46,53 @@ const FeatureCard = ({
               {description}
             </p>
 
-            <motion.button
-              className="inline-block w-full lg:w-auto gray-gradient px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] hover:opacity-90 transition cursor-pointer text-black"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <Link
-                href={href}
-                className="w-full flex items-center justify-center"
+            <div className="flex flex-col gap-3">
+              <motion.button
+                className="inline-block w-full lg:w-auto gray-gradient px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] hover:opacity-90 transition cursor-pointer text-black"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
               >
-                {buttonText}
-              </Link>
-            </motion.button>
+                <Link
+                  href={href}
+                  className="w-full flex items-center justify-center gap-2"
+                >
+                  {buttonText}
+                </Link>
+              </motion.button>
+
+              {secondaryButtonText && secondaryHref && (
+                <motion.button
+                  className="inline-block w-full lg:w-auto px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition cursor-pointer text-black border-[1.5px] border-black/25 bg-white"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                >
+                  <Link
+                    href={secondaryHref}
+                    className="w-full flex items-center justify-center gap-2"
+                  >
+                    {secondaryButtonText}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </Link>
+                </motion.button>
+              )}
+            </div>
           </div>
         </motion.div>
 
