@@ -42,13 +42,11 @@ const SponsorSection = () => {
               />
 
               <p className="w-full md:max-w-sm 2xl:max-w-md text-foreground text-sm md:text-[20px] leading-[100%]">
-                Partner with Circle Club during Monaco’s most prestigious
-                events.
+                Partner with Circle Club during Monaco’s most prestigious events.
               </p>
 
               <p className="w-full md:max-w-md 2xl:max-w-lg text-foreground text-sm md:text-[20px] leading-[100%]">
-                We collaborate with brands aligned with excellence and
-                discretion.
+                We collaborate with brands aligned with excellence and discretion.
               </p>
             </div>
 
@@ -74,6 +72,15 @@ const SponsorSection = () => {
             height={697}
             alt="sponsor"
           />
+          <video
+            className="absolute inset-0 block w-full h-full object-cover pointer-events-none"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/videos/sponsor.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>

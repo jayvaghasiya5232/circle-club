@@ -5,6 +5,8 @@ export interface FeatureItem {
   videoSrc: string;
   thumbnail: string;
   href: string;
+  secondaryButtonText?: string;
+  secondaryHref?: string;
 }
 
 export const FEATURES: FeatureItem[] = [
@@ -16,6 +18,8 @@ export const FEATURES: FeatureItem[] = [
     videoSrc: "/videos/sponsor.mp4",
     thumbnail: "/images/event/event_1.webp",
     href: "/request-access",
+    secondaryButtonText: "Information",
+    secondaryHref: "/monaco-f1-grand-prix",
   },
   {
     title: "Private Yacht Experience",
