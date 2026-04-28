@@ -79,7 +79,7 @@ export const SERVICES_LIST: serviceList[] = [
     ],
     cta: "CONTACT VILLA SPECIALIST",
     src: "/images/ecosystem/eco_7.webp",
-    overlay: "We structure deals, not just bookings",
+    overlay: "",
     href: "/contact?type=real-estate",
   },
   {
@@ -126,13 +126,13 @@ export const SERVICES_LIST: serviceList[] = [
     src: "/images/ecosystem/eco_9.webp",
     href: "/contact?type=cars",
   },
-  {
-    id: "006",
-    title: "Monaco Property",
-    bullets: [],
-    cta: "CONTACT Us",
-    src: "",
-    href: "/contact?type=cars",
-  }
+  // {
+  //   id: "006",
+  //   title: "Monaco Property",
+  //   bullets: [],
+  //   cta: "CONTACT Us",
+  //   src: "",
+  //   href: "/contact?type=cars",
+  // }
   
 ];

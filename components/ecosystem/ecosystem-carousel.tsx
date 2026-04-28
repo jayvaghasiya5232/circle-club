@@ -80,7 +80,7 @@ const EcosystemCarousel = () => {
                 {service.description}
               </p>
 
-              <button className="text-brown-100 cursor-pointer flex items-center gap-2 underline underline-offset-2 mt-auto text-sm md:text-[18px] leading-6">
+              <button className="text-brown-100 cursor-pointer flex items-center gap-2 underline underline-offset-2 mt-auto !text-sm md:text-[18px] leading-6">
                 <Link className="flex items-center gap-2" href={service.href}>
                   {service.buttonText}
                   <ArrowRight size={16} />
