@@ -14,18 +14,27 @@ export const ECOSYSTEM_CARD: EcosystemCard[] = [
     thumbnail: "/images/ecosystem/eco_1.webp",
     href: "/contact?type=cars",
   },
+  // {
+  //   title: "Private Villas",
+  //   description:
+  //     "Short and long-term curated properties in Monaco and the Riviera.",
+  //   buttonText: "Contact Property Advisor",
+  //   thumbnail: "/images/ecosystem/eco_2.webp",
+  //   href: "/contact?type=real-estate",
+  // },
   {
-    title: "Private Villas",
+    title: "Exclusive Summer Rentals",
     description:
       "Short and long-term curated properties in Monaco and the Riviera.",
-    buttonText: "Contact Property Advisor",
+    buttonText: "Contact Our Villa Rental Experts",
     thumbnail: "/images/ecosystem/eco_2.webp",
     href: "/contact?type=real-estate",
   },
   {
     title: "Car Support",
     description: "Professional detailing facilities in Monaco & Cannes.",
-    buttonText: "Contact Garage Manager",
+    buttonText: "Contact Detailing Expert",
+    // buttonText: "Contact Garage Manager",
     thumbnail: "/images/ecosystem/eco_10.jpeg",
     href: "/contact?type=cars",
   },

@@ -72,7 +72,7 @@ const EcosystemCarousel = () => {
             </div>
 
             <div className="flex flex-col flex-1 gap-2 md:gap-4">
-              <h3 className="uppercase text-black-100 font-semibold tracking-[1.1] leading-3.5 md:leading-4 text-base md:text-[22px]">
+              <h3 className="uppercase text-black-100 font-semibold tracking-[1.1] leading-3.5 md:leading-4 !text-base md:text-[22px]">
                 {service.title}
               </h3>
 
