@@ -47,7 +47,7 @@ const MonacoHospitalitySection = () => {
                 <>
                   Every detail.
                   <br />
-                  Taken care of.
+                  Taken <span className="text-brown-100">care of</span> .
                 </>
               }
               colorClassName="text-[38px]! md:text-[42px]! lg:text-[56px]! text-[#1C1917]! font-bold! leading-[0.93] tracking-[-1px] md:tracking-normal"

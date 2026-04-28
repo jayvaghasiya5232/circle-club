@@ -70,10 +70,39 @@ const ServiceCard = ({
   return (
     <div className="w-full bg-white border border-transparent md:border-[#0000004D] p-5 md:p-8 flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-12 h-full">
       {/* IMAGE */}
-      {/* <div className="order-1 lg:order-2 w-full lg:w-[48%]"> */}
       <div className="order-1 lg:order-2 lg:col-span-6 flex justify-end">
         <div className="relative w-full aspect-2/2 md:aspect-5/4 lg:aspect-4/3 overflow-hidden">
-          <Image src={src} alt={title} fill className="object-cover" />
+          {src ? (
+            <Image src={src} alt={title} fill className="object-cover" />
+          ) : (
+            <div className="absolute inset-0 bg-[#111] flex items-center justify-center">
+              <div className="text-center text-white/20 p-8">
+                <svg
+                  className="w-16 h-16 mx-auto mb-3"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  viewBox="0 0 64 64"
+                  aria-hidden
+                >
+                  <path
+                    d="M4 42L16 22L48 22L60 42L4 42Z"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <circle cx="16" cy="48" r="5" />
+                  <circle cx="48" cy="48" r="5" />
+                  <path
+                    d="M32 6L32 22M24 12L32 4L40 12"
+                    strokeLinecap="round"
+                  />
+                </svg>
+                <span className="text-xs font-semibold tracking-widest uppercase block">
+                  Photo coming soon
+                </span>
+              </div>
+            </div>
+          )}
 
           {overlay && (
             <div className="absolute bottom-0 inset-x-0 bg-white/10 backdrop-blur-2xl p-4 md:p-6">

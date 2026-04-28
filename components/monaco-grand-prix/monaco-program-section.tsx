@@ -43,7 +43,11 @@ const MonacoProgramSection = () => {
               squareClassName="bg-[#0E0E0E29]!"
             />
             <SectionTitle
-              title="The Program."
+              title={
+                <>
+                  The <span className="text-brown-100">Program</span>.
+                </>
+              }
               colorClassName="text-[38px]! md:text-[42px]! lg:text-[56px]! text-[#1C1917]! font-bold! leading-[0.93] tracking-[-1px] md:tracking-normal"
             />
             <p className="text-sm md:text-base text-[#6B6B6B] leading-[1.7] md:leading-[1.65] max-w-[420px]">

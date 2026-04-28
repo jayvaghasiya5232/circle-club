@@ -10,7 +10,7 @@ export const ECOSYSTEM_CARD: EcosystemCard[] = [
   {
     title: "Prestige Rental Cars",
     description: "Direct access to high-performance and ultra-luxury vehicles.",
-    buttonText: "Contact Mobility Manager",
+    buttonText: "Contact Our Rental Car Experts",
     thumbnail: "/images/ecosystem/eco_1.webp",
     href: "/contact?type=cars",
   },
