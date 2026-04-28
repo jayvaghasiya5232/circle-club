@@ -125,6 +125,14 @@ export const SERVICES_LIST: serviceList[] = [
     cta: "CONTACT Us",
     src: "/images/ecosystem/eco_9.webp",
     href: "/contact?type=cars",
+  },
+  {
+    id: "006",
+    title: "Monaco Property",
+    bullets: [],
+    cta: "CONTACT Us",
+    src: "",
+    href: "/contact?type=cars",
   }
   
 ];
