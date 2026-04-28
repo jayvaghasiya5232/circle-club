@@ -31,7 +31,7 @@ const FeatureCard = ({
       >
         {/* Left Content */}
         <motion.div
-          className="order-2 md:order-0 bg-gray-dark px-4 py-4 lg:py-16 lg:px-16 flex flex-col justify-center items-center"
+          className="order-2 md:order-0 bg-gray-dark px-4 py-4 lg:py-16 lg:px-16 flex flex-col justify-center items-center min-h-[280px]"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -62,9 +62,9 @@ const FeatureCard = ({
                 </Link>
               </motion.button>
 
-              {secondaryButtonText && secondaryHref && (
+              {secondaryButtonText && secondaryHref ? (
                 <motion.button
-                  className="inline-block w-full lg:w-auto px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition cursor-pointer text-black border-[1.5px] border-black/25 bg-white"
+                  className="inline-block w-full lg:w-auto px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition cursor-pointer text-black border-[1.5px] border-black/25 bg-transparent"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -91,6 +91,8 @@ const FeatureCard = ({
                     </svg>
                   </Link>
                 </motion.button>
+              ) : (
+                <div className="h-[42px] invisible pointer-events-none" />
               )}
             </div>
           </div>
