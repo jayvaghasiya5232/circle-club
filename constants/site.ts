@@ -34,14 +34,14 @@ export const CONTACT_INFO: ContactInfo[] = [
     phones: [
       {
         type: "real-estate",
-        value: "+41 78 303 83 13",
-        href: "https://wa.me/+41783038313",
-      },
-      {
-        type: "cars",
         value: "+33 6 27 08 53 55",
         href: "https://wa.me/+33627085355",
       },
+      {
+        type: "cars",
+        value: "+41 78 303 83 13",
+        href: "https://wa.me/+41783038313",
+      }
     ],
   },
 ];
